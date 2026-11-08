@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Дуб</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: #eaf6df;
+      font-family: Arial, sans-serif;
+    }
+
+    svg {
+      width: min(80vw, 360px);
+      height: auto;
+    }
+
+    h1 {
+      margin: 12px 0 0;
+      color: #315c2b;
+      font-size: 36px;
+    }
+  </style>
+</head>
+
+<body>
+  <svg viewBox="0 0 300 320" role="img" aria-label="Рисунок дуба">
+    <!-- Земля -->
+    <ellipse cx="150" cy="288" rx="105" ry="15" fill="#9acb76"/>
+
+    <!-- Ствол и ветки -->
+    <path
+      d="M133 280
+         C142 238 139 207 127 174
+         L105 145
+         C100 138 106 132 112 139
+         L137 164
+         L145 125
+         L132 98
+         C128 89 136 85 141 94
+         L151 115
+         L164 87
+         C169 77 177 82 173 92
+         L158 128
+         L164 163
+         L190 136
+         C197 129 203 136 196 143
+         L166 178
+         C159 211 161 248 170 280
+         Z"
+      fill="#87542f"
+    />
+
+    <!-- Крона -->
+    <g fill="#4f9a45">
+      <circle cx="150" cy="78" r="48"/>
+      <circle cx="111" cy="105" r="38"/>
+      <circle cx="190" cy="106" r="39"/>
+      <circle cx="91" cy="139" r="31"/>
+      <circle cx="207" cy="141" r="34"/>
+      <circle cx="143" cy="135" r="48"/>
+    </g>
+
+    <!-- Детали кроны -->
+    <g fill="#78b95b">
+      <circle cx="133" cy="57" r="13"/>
+      <circle cx="174" cy="80" r="12"/>
+      <circle cx="105" cy="104" r="10"/>
+      <circle cx="188" cy="125" r="12"/>
+    </g>
+  </svg>
+
+  <h1>Это дуб</h1>
+</body>
+</html>
